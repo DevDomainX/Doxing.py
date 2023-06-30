@@ -25,8 +25,11 @@ def nota():
 
 def ver():
     print("Datos guardados son:")
-    os.system("cat informacion.txt")
-    return menu()
+    
+    with open("informacion.txt", "r") as con:
+        for con in con.read():
+        print(con, end="")    
+        return menu()
 
 
 
