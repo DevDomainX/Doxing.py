@@ -19,7 +19,7 @@ def nota():
     print("                       Crear nota para guardar informacion optenida  \n\n")
     datos = input("Ingresa datos copiados: ")
     with open("informacion.txt","a") as con:
-        con.write(datos,"\n\n")
+        con.write(f"{datos}\n\n")
         print("datos guardados con exito!!")
         return menu()
 
