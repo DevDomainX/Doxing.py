@@ -105,22 +105,12 @@ def menu():
         elif op == 8:
             nota()
         elif op == 0:
-            print("creador: Hacker NoDo .... gracias")
+            print("creador: Hans Saldias .... gracias")
             break
         elif op == 9:
             ver()
         else:
             print("No se pudo ejecutar")
-
-
-
-
-
-
-
-
-
-
 
 
 
