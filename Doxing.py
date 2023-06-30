@@ -28,8 +28,8 @@ def ver():
     
     with open("informacion.txt", "r") as con:
         for con in con.read():
-        print(con, end="")    
-        return menu()
+            print(con, end="")    
+            return menu()
 
 
 
