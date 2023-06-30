@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # CREATED BY: Hacker nodo
 import os
+from comorama import init, Fore, Style
+init()
 
 def modo_uso():
     print("""el uso de este escript es 1 tener el nombre y por lo menos un apellido de la persona
@@ -30,7 +32,7 @@ def ver():
 
 def menu():
     while True:
-        print("""                   ###################################
+        print(Fore.GREEN_EX+"""                   ###################################
         >>>>>>>>>>>                || CHILE V1 CREADOR: Hans Saldias||               <<<<<<<<<<<<<<<<
                                    ###################################
 
@@ -85,47 +87,24 @@ def menu():
 
         if op == 1:
             os.system("termux-open https://www.nombrerutyfirma.com")
-        else:
-            print("Eror no se pudo ejecutar")
-            menu()
-        if op == 2:
+        elif op == 2:
             os.system("termux-open https://www.registrocivil.cl/principal/servicios-en-linea")
-        else:
-            print("Error no se puede ejecutar")
-            menu()
-        if op == 3:
+        elif op == 3:
             os.system("termux-open https://www.autofac.cl/consultar-patente-auto#input-free-report")
-        else:
-            print("Error no se pudo ejecutar")
-            menu()
-        if op == 4:
+        elif op == 4:
             os.system("termux-open https://osintframework.com/")
-        else:
-            print("Error no se pudo ejecutar")
-            menu()
-        if op == 5:
+        elif op == 5:
             os.system("termux-open https://www.whitepages.com/reverse-phone")
-        else:
-            print("Error no se pudo ejecutar")
-            menu()
-        if op == 6:
+        elif op == 6:
             os.system("termux-open https://who.is/")
-        else:
-            print("Error no se pudo ejecutar")
-            menu()
-        if op == 7:
-            pass
-        else:
-            pass
-        if op == 8:
+        elif op == 7:
+            modo_uso()
+        elif op == 8:
             nota()
-        else:
-            print("Error en ejecucion")
-            menu()
-        if op == 0:
+        elif op == 0:
             print("creador: Hacker NoDo .... gracias")
             break
-        if op == 9:
+        elif op == 9:
             ver()
         else:
             print("No se pudo ejecutar")
