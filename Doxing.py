@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # CREATED BY: Hacker nodo
 import os
-from colorama import init, Fore, Style
+from colorama import init, Fore, Back
 init()
 
 def modo_uso():
