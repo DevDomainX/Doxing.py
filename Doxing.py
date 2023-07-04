@@ -35,7 +35,7 @@ def ver():
 
 def menu():
     while True:
-        print(Fore.RED+Back.CYAN+"""                   ###################################
+        print(Fore.RED+"""                   ###################################
         >>>>>>>>>>>                || CHILE V1 CREADOR: Hans Saldias||               <<<<<<<<<<<<<<<<
                                    ###################################
 
