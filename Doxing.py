@@ -26,10 +26,11 @@ def nota():
 def ver():
     print("Datos guardados son:")
     
-    with open("informacion.txt", "r") as con:
-        for con in con.read():
-            print(con, end="")    
-            return menu()
+    with open("informacion.txt", "r", encoding='utf-8') as con:
+        lineas = con.readlines()
+    for linea in lineas:
+        print(linea.strip())
+    return menu()
 
 
 
